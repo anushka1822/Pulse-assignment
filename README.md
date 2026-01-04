@@ -94,6 +94,31 @@ cd Pulse
 
 ---
 
+---
+
+## 🎥 Project Demo
+You can view a complete walkthrough of the application functionality here:
+[**Watch Demo Video**](https://drive.google.com/file/d/1y416EppEsduyVAZY5YjvTHUsL5-WtVas/view?usp=sharing)
+
+---
+
+## 🔑 Authentication & Testing Credentials
+
+Use the following credentials to explore the multi-tenant features. All accounts use the common password: `password123`
+
+| Organization | Role | Email |
+| :--- | :--- | :--- |
+| **System** | Super Admin | `super@admin.com` |
+| **Alpha Corp** | Editor | `editor@alpha.com` |
+| **Alpha Corp** | Viewer | `viewer@alpha.com` |
+| **Beta Corp** | Editor | `editor@beta.com` |
+| **Pulse Corp** | Editor | `editor@pulse.com` |
+| **Pulse Corp** | Viewer | `viewer@alpha.com` |
+
+---
+
+---
+
 ## 🔐 Role-Based Access Control (RBAC)
 
 The system supports three distinct roles:

@@ -24,7 +24,7 @@ const AdminDashboard = () => {
 
     // Socket Effect
     useEffect(() => {
-        const socket = io('http://localhost:5000');
+        const socket = io('https://pulse-assignment-tca5.onrender.com');
 
         socket.on('connect', () => {
             if (user) socket.emit('join', user);

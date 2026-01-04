@@ -13,7 +13,7 @@ const Player = () => {
         if (token && id) {
             // Direct streaming URL with token in query param
             // This allows the browser to handle partial content (range requests) natively
-            const streamUrl = `http://localhost:5000/api/videos/stream/${id}?token=${token}`;
+            const streamUrl = `https://pulse-assignment-tca5.onrender.com/api/videos/stream/${id}?token=${token}`;
             setVideoUrl(streamUrl);
         }
     }, [id, token]);

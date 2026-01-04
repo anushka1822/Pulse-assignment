@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api', // Adjust if backend port changes
+    baseURL: 'https://pulse-assignment-tca5.onrender.com/api', // Adjust if backend port changes
 });
 
 // Add a request interceptor to attach the Token
