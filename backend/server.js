@@ -20,7 +20,10 @@ requiredEnvs.forEach((name) => {
 connectDB();
 // Initialize Socket.io for Real-Time Updates 
 const io = new Server(server, {
-    cors: { origin: "*" }
+    cors: {
+        origin: ["https://pulse-assignment-beta.vercel.app", "http://localhost:5173", "http://localhost:3000"],
+        methods: ["GET", "POST"]
+    }
 });
 
 io.on('connection', (socket) => {
@@ -47,7 +50,11 @@ io.on('connection', (socket) => {
     });
 });
 
-app.use(cors());
+app.use(cors({
+    origin: ["https://pulse-assignment-beta.vercel.app", "http://localhost:5173", "http://localhost:3000"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
 app.use(express.json());
 
 // Attach socket to request so controllers can use it
