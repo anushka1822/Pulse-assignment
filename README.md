@@ -1,7 +1,14 @@
 # Pulse CMS - Video Management & Hosting Platform
 
 A professional full-stack multi-tenant application for secure video upload, AI-powered sensitivity analysis, and seamless streaming.
+---
 
+## 🎥 Project Demo
+
+You can view a complete walkthrough of the application functionality here:
+[**Watch Demo Video**](https://drive.google.com/file/d/1y416EppEsduyVAZY5YjvTHUsL5-WtVas/view?usp=sharing)
+
+---
 ## 🚀 Overview
 
 Pulse CMS is designed as a robust solution for organizations to manage their video content with built-in safety checks. It features a modern dark-themed UI, real-time processing updates via Socket.io, and a secure multi-tenant architecture.
@@ -135,7 +142,20 @@ The system supports three distinct roles:
    - Read-only access to published videos within their tenant
 
 ---
+## 🔑 Authentication & Testing Credentials
 
+Use the following credentials to explore the multi-tenant features. All accounts use the common password:**`password123`**
+
+| Organization | Role | Email |
+| :--- | :--- | :--- |
+| **System** | Super Admin | `super@admin.com` |
+| **Alpha Corp** | Editor | `editor@alpha.com` |
+| **Alpha Corp** | Viewer | `viewer@alpha.com` |
+| **Beta Corp** | Editor | `editor@beta.com` |
+| **Pulse Corp** | Editor | `editor@pulse.com` |
+| **Pulse Corp** | Viewer | `viewer@alpha.com` |
+
+---
 ## 📖 User Manual
 
 ### Login
